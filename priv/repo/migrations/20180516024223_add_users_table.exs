@@ -13,8 +13,7 @@ defmodule TheLongDrag.Repo.Migrations.AddUsersTable do
       add :last_ip, :inet, null: false
       add :user_timezone, :text, null: false, default: "America/New_York"
       add :email, :text, null: false
-      add :pw_modified, :timestamp, null: false, default: fragment "NOW()"
-
+      add :pw_modified_at, :timestamp, null: false, default: fragment "NOW()"
       timestamps()
     end
 
