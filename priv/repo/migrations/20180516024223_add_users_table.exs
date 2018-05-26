@@ -5,6 +5,7 @@ defmodule TheLongDrag.Repo.Migrations.AddUsersTable do
     execute "CREATE EXTENSION pgcrypto"
     create table(:users) do
       add :username, :text, null: false
+      add :display_name, :text, null: false
       add :pwhash, :text, null: false
       add :first_name, :text, null: false
       add :last_name, :text, null: false
