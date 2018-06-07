@@ -2,7 +2,7 @@ defmodule TheLongDrag.Repo.Migrations.AddUsersTable do
   use Ecto.Migration
 
   def up do
-    execute "CREATE EXTENSION pgcrypto"
+    execute "CREATE EXTENSION IF NOT EXISTS pgcrypto"
     create table(:users) do
       add :username, :text, null: false
       add :display_name, :text, null: false
