@@ -1,4 +1,4 @@
-defmodule TheLongDragWeb.PageController do
+defmodule TheLongDragWeb.FrontPageController do
   use TheLongDragWeb, :controller
 
   def index(conn, _params) do

@@ -16,7 +16,7 @@ defmodule TheLongDragWeb.Router do
   scope "/", TheLongDragWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", FrontPageController, :index
   end
 
   # Other scopes may use custom stacks.
