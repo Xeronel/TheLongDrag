@@ -40,6 +40,7 @@ defmodule TheLongDragWeb do
       import TheLongDragWeb.Router.Helpers
       import TheLongDragWeb.ErrorHelpers
       import TheLongDragWeb.Gettext
+      import TheLongDragWeb.ViewHelpers
     end
   end
 
