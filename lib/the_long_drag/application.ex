@@ -14,6 +14,7 @@ defmodule TheLongDrag.Application do
       supervisor(TheLongDragWeb.Endpoint, []),
       # Start your own worker by calling: TheLongDrag.Worker.start_link(arg1, arg2, arg3)
       # worker(TheLongDrag.Worker, [arg1, arg2, arg3]),
+      worker(Cachex, [:tld_cache, []]),
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
